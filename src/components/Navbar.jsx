@@ -1,10 +1,14 @@
-function Navbar() {
-    return (
-      <nav>
-        <h2>Navbar</h2>
-      </nav>
-    );
-  }
-  
-  export default Navbar;
-  
+const Navbar = () => {
+
+    return(
+        <>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+        </>
+    )
+};
+
+export default Navbar;
