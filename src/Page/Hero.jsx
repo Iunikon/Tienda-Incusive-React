@@ -40,10 +40,10 @@ function Hero() {
             </button>
           </div>
         </div>
-        <div className="relative mx-auto mt-10 container">
+        <div className="mx-auto mt-10 container">
           <img
             className="w-full rounded-2xl border border-slate-100 "
-            src="https://images.unsplash.com/photo-1587502536575-6dfba0a6e017"
+            src="public/images/Poratada-inclusive.jpg"
             alt=""
           />
         </div>
