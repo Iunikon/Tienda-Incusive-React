@@ -1,6 +1,6 @@
-import Navitem from "./Navitem.js";
-import { categories } from "../../../mock/mockData.js";
-import CartItem from "./Cartitem.jsx";
+import Navitem from "./Navitem.jsx";
+import { categories } from "../../mock/mockData.js";
+import CartItem from "./Carticon.jsx";
 
 const Navbar = (props) => {
   return (
