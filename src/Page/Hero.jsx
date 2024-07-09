@@ -43,7 +43,7 @@ function Hero() {
         <div className="mx-auto mt-10 container">
           <img
             className="w-full rounded-2xl border border-slate-100 "
-            src="public/images/Poratada-inclusive.jpg"
+            src="/images/Poratada-inclusive.jpg"
             alt=""
           />
         </div>
