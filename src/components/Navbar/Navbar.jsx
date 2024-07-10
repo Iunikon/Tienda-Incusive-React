@@ -10,7 +10,6 @@ const Navbar = (props) => {
           <Navitem name={categories[0]} />
           <Navitem name={categories[1]} />
           <a href="#" className="hover:scale-105 transform transition">
-            <img src="/images/Logo-webpage.png" alt="" />
           </a>
           <Navitem name={categories[2]} />
           <Navitem name={categories[3]} />
