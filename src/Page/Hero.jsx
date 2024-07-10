@@ -1,7 +1,7 @@
 function Hero() {
   return (
 
-    <div className="relative overflow-hidden bg-gradient-to-b from-blue-50 via-transparent to-transparent pb-44 pt-44">
+    <div className="relative overflow-hidden bg-gradient-to-b from-blue-50 via-transparent to-transparent pb-24 pt-44">
       <div className="relative z-10">
         <div className="absolute inset-x-0 top-1/2 -z-10 flex -translate-y-1/2 justify-center overflow-hidden [mask-image:radial-gradient(50%_45%_at_50%_55%,white,transparent)]">
           <svg className="h-[60rem] w-[100rem] flex-none stroke-violet-950 opacity-20" aria-hidden="true">
@@ -34,7 +34,7 @@ function Hero() {
           </p>
           <div className="mt-6 flex items-center justify-center gap-x-6">
             <button
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-violet-600 px-4 py-2.5 text-sm font-semibold text-white hover:bg-violet-500 focus-visible:outline-violet-600"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-violet-600 px-4 py-2.5 text-sm font-semibold text-white hover:bg-violet-700 focus-visible:outline-violet-600"
             >
               Ver productos
             </button>
@@ -42,7 +42,7 @@ function Hero() {
         </div>
         <div className="mx-auto mt-10 container">
           <img
-            className="w-full rounded-2xl border border-slate-100 "
+            className="w-full rounded-2xl border border-slate-100 transition trnas hover:scale-105 ease-out duration-300 "
             src="/images/Poratada-inclusive.jpg"
             alt=""
           />
