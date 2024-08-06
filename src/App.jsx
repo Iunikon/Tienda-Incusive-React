@@ -7,11 +7,12 @@ function App() {
   const title = "Titulo ejemplo"; 
 
   return (
-    <div>
+    <>
       <Navbar />
       <Hero />
       <ItemListContainer title={title} />
-    </div>
+      <ItemListContainer otroTitle={"Titulo por defecto"} />
+    </>
   );
 }
 
