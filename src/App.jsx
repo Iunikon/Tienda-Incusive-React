@@ -1,8 +1,8 @@
 import './App.css';
-import Hero from './Page/Hero';
+import Hero from './page/Hero.jsx';
 import Navbar from './components/Navbar/Navbar.jsx';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer.jsx';
-import { products } from './mock/mockData.js';
+import { items } from './mock/mockData.js';
 
 function App() {
   const title = "Titulo ejemplo"; 

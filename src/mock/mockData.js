@@ -1,7 +1,7 @@
 export const categories = ["Deportiva", "Casual", "Erótica", "Descanso"];
 
 
-export const products = [
+export const items = [
     {
         id: 1,
         name: "boxer",
@@ -26,7 +26,7 @@ export const products = [
         description: "Tanga de microfibra transpirable diseñada para un ajuste cómodo durante el ejercicio.",
         price: 120,
         stock: 20,
-        category: ["Deportiva"],
+        category: ["Erótica"],
         image: "path/to/tanga-image.jpg"
     },
     {
