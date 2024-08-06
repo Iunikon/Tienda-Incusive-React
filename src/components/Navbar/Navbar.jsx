@@ -10,8 +10,8 @@ const Navbar = () => {
           <a href="#" className="mx-4 hover:scale-105 transform transition">
             <img src="/images/Logo-webpage.png" alt="Logo website" />
           </a>
-          {categories.map((category) => (
-            <Navitem key={category} name={category} />
+          {categories.map((category, id) => (
+            <Navitem key={id} name={category} />
           ))}
           <CartWidget />
         </ul>

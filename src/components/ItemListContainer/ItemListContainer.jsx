@@ -1,24 +1,19 @@
-import ItemCount from "./ItemCount";
-import ItemList from "./ItemList";
+import ItemList from "../Itemlist/ItemList";
+import { products } from "../../mock/mockData";
 
 
-
-const ItemListContainer = ({ title, otroTitle }) => {
+const ItemListContainer = ({ title }) => {
     let titleToShow
     if(title != undefined){
         titleToShow = "No hay productos"
-    }else{
-        titleToShow = otroTitle;
     }
 
-
-    return (
-        
+    
+    return (   
     <div className="mx-auto container">
-        <div className="w-1/2">
+        <div className="">
             <h2 className="text-3xl font-bold text-slate-700 mb-1">{titleToShow}  </h2> {/* Ejemplo de estilos */}
-            <ItemList />
-            <ItemCount stock={10} initial={1} />
+            <ItemList products={products} />
         </div>
 
     </div>
