@@ -1,11 +1,12 @@
 import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Footer/Footer";
 
 const layout = ({ children }) => {
 return (
 
 //fondo de color + svg
 <div
-    className="mx-auto relative overflow-hidden bg-gradient-to-b from-blue-50 via-transparent to-transparent pb-24 pt-44">
+    className="mx-auto relative overflow-hidden bg-gradient-to-b from-blue-50 via-transparent to-transparent pt-44">
     <div className="relative z-10">
         <div
             className="absolute inset-x-0 top-1/2 -z-10 flex -translate-y-1/2 justify-center overflow-hidden [mask-image:radial-gradient(50%_45%_at_50%_55%,white,transparent)]">
@@ -26,6 +27,7 @@ return (
         <Navbar />
         {children}
     </div>
+    <Footer />
 </div>
 );
 };
