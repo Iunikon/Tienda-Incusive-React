@@ -23,7 +23,7 @@ const ItemListContainer = ({ title }) => {
     }, [cat]);
 
     return (   
-        <div className="mx-auto container">
+        <div>
             <div className="">
                 <h2 className="text-3xl font-bold text-slate-700 mb-1">{title}</h2> 
                 <ItemList products={products} />
