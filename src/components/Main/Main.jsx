@@ -1,4 +1,4 @@
-function Hero () {
+function Main () {
 return (
 
 <div>
@@ -28,4 +28,4 @@ return (
 );
 }
 
-export default Hero;
+export default Main;
