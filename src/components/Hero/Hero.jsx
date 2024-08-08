@@ -1,4 +1,4 @@
-function Hero() {
+function Hero () {
 return (
 
 <div>
