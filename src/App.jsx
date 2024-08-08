@@ -14,7 +14,7 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/"  element={<>
-                <Hero/>
+                <Main/>
                 <ItemListContainer title={title} />
               </>
             } 
