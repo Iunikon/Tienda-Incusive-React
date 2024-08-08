@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 
-const layout = ({ children }) => {
+const Layout = ({ children }) => {
 return (
 
 //fondo de color + svg
@@ -32,4 +32,4 @@ return (
 );
 };
 
-export default layout;
+export default Layout;
