@@ -28,8 +28,8 @@ const ItemListContainer = ({ title }) => {
                 <h2 className="text-3xl font-bold text-slate-700 mb-1">{title}</h2> 
                 <ItemList products={products} />
             </div>
-            <button onClick={() => setCat("Casual")}>Set cat = Casual</button>
-            <button onClick={() => setCat("Deportiva")}>Set cat = Deportiva</button>
+            <button className="px-4 py-2.5 text-sm font-semibold bg-violet-600 rounded-full focus:text-white text-white hover:bg-violet-700 focus:bg-violet-600 focus:outline-none focus:shadow-outline" onClick={() => setCat("Casual")}>Set cat = Casual</button>
+            <button className="px-4 py-2.5 text-sm font-semibold bg-violet-600 rounded-full focus:text-white text-white hover:bg-violet-700 focus:bg-violet-600 focus:outline-none focus:shadow-outline" onClick={() => setCat("Deportiva")}>Set cat = Deportiva</button>
         </div>
     );
 };
