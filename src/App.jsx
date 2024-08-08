@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
-import Hero from './page/Hero.jsx';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer.jsx';
 import Layout from './page/Layout.jsx';
+import Hero from './page/Hero.jsx';
 import Contact from './components/Contact/Contact.jsx';
 import AboutUs from './components/AboutUs/AbouUs.jsx';
 
