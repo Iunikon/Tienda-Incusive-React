@@ -1,7 +1,7 @@
 import Navitem from './Navitem.jsx';
 import { categories } from '../../mock/mockData.js';
 import CartWidget from '../CartWidget/CartWidget.jsx';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -14,10 +14,26 @@ const Navbar = () => {
           {categories.map((category, id) => (
             <Navitem key={id} category={category} />
           ))}
-          <Link 
-            to="/Contact" 
-            className="px-4 py-2.5 text-sm font-semibold bg-transparent rounded-full ml-1 focus:text-white hover:text-white hover:bg-violet-600 focus:bg-violet-600 focus:outline-none focus:shadow-outline">Contacto</Link>
-          <Link to="/AboutUs" className="px-4 py-2.5 text-sm font-semibold bg-transparent rounded-full ml-1 focus:text-white hover:text-white hover:bg-violet-600 focus:bg-violet-600 focus:outline-none focus:shadow-outline">About</Link>
+          <NavLink
+            to="/Contact"
+            className={({ isActive }) =>
+              `px-4 py-2.5 text-sm font-semibold bg-transparent rounded-full ml-1 focus:text-white hover:text-white hover:bg-violet-600 focus:bg-violet-600 focus:outline-none focus:shadow-outline transition duration-250 ease-in-out ${
+                isActive ? 'bg-violet-600 text-white' : ''
+              }`
+            }
+          >
+            Contacto
+          </NavLink>
+          <NavLink
+            to="/AboutUs"
+            className={({ isActive }) =>
+              `px-4 py-2.5 text-sm font-semibold bg-transparent rounded-full ml-1 focus:text-white hover:text-white hover:bg-violet-600 focus:bg-violet-600 focus:outline-none focus:shadow-outline transition duration-250 ease-in-out ${
+                isActive ? 'bg-violet-600 text-white' : ''
+              }`
+            }
+          >
+            About
+          </NavLink>
           <CartWidget />
         </ul>
       </div>
