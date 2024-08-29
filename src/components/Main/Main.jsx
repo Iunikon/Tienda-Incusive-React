@@ -19,10 +19,6 @@ return (
                 </button>
             </div>
         </div>
-        <div className="mx-auto mt-10 container">
-            <img className="w-full rounded-2xl border border-slate-100 transition trnas hover:scale-105 ease-out duration-300 "
-                src="/images/Poratada-inclusive.jpg" alt="" />
-        </div>
     </div>
 </div>
 );
