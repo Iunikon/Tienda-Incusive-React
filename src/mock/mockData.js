@@ -9,7 +9,7 @@ export const items = [
         price: 100,
         stock: 10,
         category: ["Casual"],
-        image: "path/to/boxer-image.jpg"
+        image: "https://res.cloudinary.com/dvfa86pha/image/upload/v1725045900/cld-sample-5.jpg"
     },
     {
         id: 2,
@@ -18,7 +18,7 @@ export const items = [
         price: 150,
         stock: 15,
         category: ["Descanso"],
-        image: "path/to/bralette-image.jpg"
+        image: "https://res.cloudinary.com/dvfa86pha/image/upload/v1725045900/cld-sample-5.jpg"
     },
     {
         id: 3,
@@ -27,7 +27,7 @@ export const items = [
         price: 120,
         stock: 20,
         category: ["Erótica"],
-        image: "path/to/tanga-image.jpg"
+        image: "https://res.cloudinary.com/dvfa86pha/image/upload/v1725045900/cld-sample-5.jpg"
     },
     {
         id: 4,
@@ -36,7 +36,7 @@ export const items = [
         price: 130,
         stock: 25,
         category: ["Deportiva"],
-        image: "path/to/jockstrap-image.jpg"
+        image: "https://res.cloudinary.com/dvfa86pha/image/upload/v1725045900/cld-sample-5.jpg"
     },
     {
         id: 5,
@@ -45,7 +45,7 @@ export const items = [
         price: 200,
         stock: 5,
         category: ["Erótica"],
-        image: "path/to/lenceria-image.jpg"
+        image: "https://res.cloudinary.com/dvfa86pha/image/upload/v1725045900/cld-sample-5.jpg"
     },
     {
         id: 6,
@@ -54,6 +54,6 @@ export const items = [
         price: 110,
         stock: 30,
         category: ["Casual"],
-        image: "path/to/bikini-image.jpg"
+        image: "https://res.cloudinary.com/dvfa86pha/image/upload/v1725045900/cld-sample-5.jpg"
     }
 ];
