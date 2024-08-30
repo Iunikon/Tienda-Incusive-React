@@ -2,13 +2,12 @@ import { items } from "../mock/mockData";
 
 export const getProducts = (category) => {
 
-    let filteredItems
+    let filteredItems = [...items]
     if (category) {
         filteredItems = items.filter((item) => 
             item.category.includes (category)
         );
     }
-    else { filteredItems  = items}
 
 
     return new Promise((resolve, reject) => {
@@ -21,3 +20,4 @@ export const getProducts = (category) => {
         }
     });
 };
+ 
