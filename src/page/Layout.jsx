@@ -6,8 +6,8 @@ return (
 
 //fondo de color + svg
 <div
-    className="mx-auto relative overflow-hidden h- bg-gradient-to-b from-blue-50 via-transparent to-transparent pt-44">
-    <div className="relative z-10">
+    className="mx-auto relative overflow-hidden h- bg-gradient-to-b from-blue-50 via-transparent to-transparent pt-36">
+    <div className="relative z-5">
         <div
             className="absolute inset-x-0 top-1/2 -z-10 flex -translate-y-1/2 justify-center overflow-hidden [mask-image:radial-gradient(50%_45%_at_50%_55%,white,transparent)]">
             <svg className="h-[60rem] w-[100rem] flex-none stroke-violet-950 opacity-20" aria-hidden="true">
