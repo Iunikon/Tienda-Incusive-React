@@ -24,10 +24,10 @@ const ItemCount = ({ stock, initial }) => {
     };
 
     return (
-        <div className="flex items-center space-x-2 mt-2">
-            <button className="px-2.5 py-1 bg-slate-200 text-slate-600 hover:text-white rounded-lg hover:bg-violet-700" onClick={() => handleClick("-")}>-</button>
+        <div className="flex items-center space-x-2 ">
+            <button className="px-2.5 py-1 bg-slate-200 text-slate-600 hover:text-white rounded-lg hover:bg-violet-600 transition-colors duration-300" onClick={() => handleClick("-")}>-</button>
             <span className="text-md w-4 text-center text-slate-600 font-semibold">{qty}</span>
-            <button className="px-2.5 py-1 bg-slate-200 text-slate-600 hover:text-white rounded-lg hover:bg-violet-600 " onClick={() => handleClick("+")}>+</button>
+            <button className="px-2.5 py-1 bg-slate-200 text-slate-600 hover:text-white rounded-lg hover:bg-violet-600 transition-colors duration-300" onClick={() => handleClick("+")}>+</button>
         </div>
     );
 };
