@@ -14,10 +14,27 @@ export const getProducts = (category) => {
         if (filteredItems.length > 0) {
             setTimeout(() => {
                 resolve(filteredItems);
-            }, 500);
+            }, 750);
         } else {
             reject("No hay productos disponibles");
         }
     });
 };
- 
+
+export const getProductById = (id) => {
+    return new Promise((resolve, reject) => {
+        const product = items.find((item) => item.id === parseInt(id)); 
+
+        setTimeout(() => {
+            if (product) {
+                resolve(product); 
+            } else {
+                reject("No se encontró el producto"); 
+            }
+        }, 750);
+    });
+};
+
+
+
+
