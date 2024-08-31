@@ -5,12 +5,11 @@ import CartWidget from '../CartWidget/CartWidget.jsx';
 import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
-  const navigate = useNavigate(); // Necesario para usar la navegación programática
+  const navigate = useNavigate();
 
   const handleGoToCheckout = () => {
     navigate("/cart");
   };
-  
 
   return (
     <nav className="fixed top-2 left-0 right-0 bg-slate-100 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-70 border border-slate-200 z-50 mx-auto text-slate-600 p-4 rounded-full max-w-3xl shadow-sm">
@@ -42,7 +41,7 @@ const Navbar = () => {
           >
             About
           </NavLink>
-          <CartWidget onClick={handleGoToCheckout} /> {/* Ajuste aquí */}
+          <CartWidget onClick={handleGoToCheckout} /> 
         </ul>
       </div>
     </nav>
