@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import CartContextProvider from './context/CartContext.jsx';
 import './App.css';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer.jsx';
 import Layout from './page/Layout.jsx';
@@ -11,11 +12,12 @@ function App() {
 const title = "Titulo ejemplo";
 
 return (
+<CartContextProvider>
 <BrowserRouter>
   <Layout>
     <Routes>
       <Route path="/" element={<>
-        <ItemListContainer title={title} />
+        <ItemListContainer />
         </>
         }
         />
@@ -27,6 +29,7 @@ return (
     </Routes>
   </Layout>
 </BrowserRouter>
+</CartContextProvider>
 );
 }
 
