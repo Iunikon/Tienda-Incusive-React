@@ -4,7 +4,7 @@ const Error404 = () => {
 const navigate = useNavigate();
 
 return (
-<div className="container relative z-10 px-6 py-12 mx-auto lg:flex lg:items-center lg:gap-12">
+<div className="container relative z-10 px-6 py-16 mx-auto lg:flex lg:items-center lg:gap-12">
     <div className="w-full lg:w-2/5">
         <p className="text-sm font-medium text-violet-500">Error 404</p>
         <h1 className="mt-3 text-4xl font-semibold text-gray-800">Page not found</h1>
