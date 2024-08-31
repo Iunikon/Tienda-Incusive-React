@@ -22,11 +22,8 @@ const Item = ({ product }) => {
       <p className="text-slate-500 mb-2 text-md">${product.price}</p>
       <p className="text-slate-500 text-sm mb-4">{product.description}</p>
       
-      <div className="flex justify-between items-center mt-auto">
+      <div className="items-center mt-auto">
         <ItemCount stock={10} initial={1} />
-        <button className="bg-violet-600 text-white text-sm px-3 py-1.5 rounded-full hover:bg-violet-700 transition-colors duration-300">
-          Añadir al carrito
-        </button>
       </div>
     </div>
   );
