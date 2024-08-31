@@ -1,5 +1,5 @@
 import { useCartContext } from "../../context/CartContext";
-import ItemCount from "../Item/ItemCount";
+import ItemCount from "../ItemCount/ItemCount";
 import { Link } from "react-router-dom";
 
 const Item = ({ product }) => {
@@ -17,9 +17,7 @@ const Item = ({ product }) => {
   return (
     <div className="relative flex flex-col h-full p-4 border rounded-lg shadow-sm bg-white overflow-hidden">
       <div className="relative">
-        <img
-          src={product.image}
-          alt={product.name}
+        <img src={product.image} alt={product.name}
           className="w-full rounded-lg h-auto object-cover"
         />
         <div className="absolute inset-0 bg-white bg-opacity-5 backdrop-blur-sm rounded-lg flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-200">
