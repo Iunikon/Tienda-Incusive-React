@@ -1,15 +1,14 @@
 import { useState } from 'react';
-import ItemCount from "../Item/ItemCount";
+import ItemCount from "../ItemCount/ItemCount";
 import { useCartContext } from '../../context/CartContext';
 
-const ItemDetail = ({ product }) => {
+const ItemDetail = ({ id, name, description, price, image, stock }) => {
     const { addToCart } = useCartContext();
-    const { id, name, description, price, stock, image } = product;
     const [count, setCount] = useState(1); 
 
     const handleOnBuy = (qty) => {
         console.log(`Se agregaron ${qty} productos al carrito`);
-        const item = {id, name, description, price};
+        const item = { id, name, description, price };
         addToCart(item, qty);
     }
 
@@ -31,7 +30,7 @@ const ItemDetail = ({ product }) => {
                     </span>
                 </div>
                 <p className="text-slate-600 mb-4">{description}</p>
-                    <ItemCount stock={stock} initial={1} handleOnBuy={handleOnBuy} />
+                <ItemCount stock={stock} initial={1} handleOnBuy={handleOnBuy} />
             </div>
         </div>
     );
