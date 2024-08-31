@@ -53,19 +53,25 @@ const CartContextProvider = ({ children }) => {
         setCart(newCart);
     };
 
-    const removeItem = (id, price, qty) => {
-        setTotal((prevTotal) => prevTotal - price * qty);
-        setQtyItems((prevQty) => prevQty - qty);
+    const removeItem = (id) => {
+        const itemToRemove = cart.find((elem) => elem.id === id);
+        if (itemToRemove) {
+            setTotal((prevTotal) => prevTotal - itemToRemove.price * itemToRemove.qty);
+            setQtyItems((prevQty) => prevQty - itemToRemove.qty);
 
-        const newCart = cart.filter((elem) => elem.id !== id);
+            const newCart = cart.filter((elem) => elem.id !== id);
 
-        setCart(newCart);
+            setCart(newCart);
+        }
     };
 
     const clearCart = () => {
         setCart([]);
         setTotal(0);
         setQtyItems(0);
+        localStorage.removeItem('cart');
+        localStorage.removeItem('total');
+        localStorage.removeItem('qty');
     };
 
     const contextValue = {
