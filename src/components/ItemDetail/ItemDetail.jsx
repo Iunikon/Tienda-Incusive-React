@@ -1,9 +1,17 @@
+import { useState } from 'react';
 import ItemCount from "../Item/ItemCount";
-
+import { useCartContext } from '../../context/CartContext';
 
 const ItemDetail = ({ product }) => {
-    const { name, description, price, stock, image } = product;
-    
+    const { addToCart } = useCartContext();
+    const { id, name, description, price, stock, image } = product;
+    const [count, setCount] = useState(1); 
+
+    const handleOnBuy = (qty) => {
+        console.log(`Se agregaron ${qty} productos al carrito`);
+        const item = {id, name, description, price};
+        addToCart(item, qty);
+    }
 
     return (
         <div className="flex flex-col lg:flex-row rounded-lg items-center h-[70vh]">
@@ -23,14 +31,7 @@ const ItemDetail = ({ product }) => {
                     </span>
                 </div>
                 <p className="text-slate-600 mb-4">{description}</p>
-                <div className="flex space-x-2">
-                    <ItemCount stock={10} initial={1} />
-                    <button
-                        className=" bg-violet-600 text-white px-4 py-1.5 rounded-full hover:bg-violet-700 transition-colors duration-300"
-                    >
-                        Comprar
-                    </button>
-                </div>
+                    <ItemCount stock={stock} initial={1} handleOnBuy={handleOnBuy} />
             </div>
         </div>
     );
