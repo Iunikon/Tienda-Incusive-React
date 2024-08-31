@@ -12,9 +12,11 @@ const ItemListContainer = () => {
 const [products, setProducts] = useState([]);
 const { categoryId } = useParams();
 const [loading, setLoading] = useState(true);
-const { titulo } = useCartContext ();
+const {titulo } = useCartContext ();
 
 let titleToShow = titulo;
+
+
 
 
 
